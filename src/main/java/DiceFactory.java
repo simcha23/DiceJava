@@ -1,7 +1,5 @@
-public class DiceFactory {
+public class DiceFactory{
 
-    DiceFactory(){
-    }
     static void makeDie(int sides){
         int value;
         int min = 1;

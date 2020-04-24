@@ -10,7 +10,7 @@ public class Main {
             maxNumber = scanner.nextLine();
 
             if(intValidation(maxNumber) && Integer.parseInt(maxNumber) == 6){
-                Die dice = new Die(Integer.parseInt(maxNumber),new int[]{1,1,1,1,1,2}); // This is the dodgy one
+                Die dice = new Die(Integer.parseInt(maxNumber),new int[]{1,1,2,1,1,2}); // This is the weighted one
 //                Die dice = new Die(Integer.parseInt(maxNumber),new int[]{1,1,1,1,1,1}); //This is the fair one
 
                 dice.roll();
@@ -22,7 +22,7 @@ public class Main {
             }
             else if(intValidation(maxNumber) && Integer.parseInt(maxNumber) == 10){
                 Die dice = new Die(Integer.parseInt(maxNumber),new int[]{1,1,1,1,1,1,1,1,1,1}); //This is the fair one
-//                Die dice = new Die(Integer.parseInt(maxNumber),new int[]{1,1,1,1,1,2,1,1,1,1}); //This is the dodgy one
+//                Die dice = new Die(Integer.parseInt(maxNumber),new int[]{1,1,1,1,1,2,1,1,1,1}); //This is the weighted one
 
                 dice.roll();
 
